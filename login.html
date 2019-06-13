@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    
+    
+    
+    
+        <link rel="stylesheet" href="css/style1.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <body class="align">
+
+  <div class="site__container">
+
+    <div class="grid__container">
+
+      <form action="" method="post" class="form form--login">
+
+        <div class="form__field">
+          <label class="fontawesome-user" for="login__username"><span class="hidden">Nome de Usuário:</span></label>
+          <input id="login__username" type="text" class="form__input" placeholder="Username" required>
+        </div>
+
+        <div class="form__field">
+          <label class="fontawesome-lock" for="login__password"><span class="hidden">Senha:</span></label>
+          <input id="login__password" type="password" class="form__input" placeholder="Password" required>
+        </div>
+
+        <div class="form__field">
+          <input type="submit" value="Sign In">
+        </div>
+
+      </form>
+
+      <p class="text--center">Não tem uma conta?<a href="inserir_usuarios.php"> Cadastre-se! </a> <span class="fontawesome-arrow-right"></span></p> 
+
+    </div>
+
+  </div>
+
+</body>
+    
+    
+    
+    
+    
+  </body>
+</html>
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Acesso Sistema</title>
+<link type="text/css" rel="stylesheet" href="estilos.css"/>
+</head>
+<body>
+
+<div id="global">
+	<div id="cabecalho">
+	  <?PHP
+        include "cabecalho.php";
+      ?>
+    </div>
+   <!-- <div id="menu">
+      //<?PHP
+       // include "menu.php";
+      ?>
+    </div>!-->
+    <div id="conteudo">
+      <?PHP
+        echo "<center><font face=\"Segoe UI\" size=\"4\">Faça o login da sua conta aqui.</font></center>";
+      ?>
+</head>
+<body><BR><BR>
+<?PHP
+
+echo "<center><h2><font face=\"Segoe UI\" size=\"4\">Acesso ao Sistema</font></h2></center>";
+
+?>
+<BR><BR>
+<p><center><div id="entrar">
+<form action="login.php" Name="formulario" method="post" >
+<font face=\"Segoe UI\">
+<br />
+<br />
+<br />
+Usuário: <input type="text" name="cx_nome" size="19" maxlength="20" tabindex="1"/><BR><BR>
+Senha: &nbsp;<input type="password" name="cx_senha" size="20" maxlength="50" tabindex="2"/><BR><BR>
+<input type="submit" value="Entrar"> 
+</font>
+</form></div>
+</p></center>
+ </div>
+    <div id="rodape">
+	  <?PHP
+		include "rodape.php";
+      ?>
+    </div>
+</div>
+</body>
+</html>

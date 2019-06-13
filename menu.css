@@ -1,0 +1,15 @@
+#menu {
+	float: left; /* defenir largura a esquerda */
+	width: 160px; /* largura 240 px*/
+	height: calc(100% - 120px);/* definir altura */
+	min-height: 400px; /* altura minima */
+	overflow: auto;/*definir cor */
+	background-color: #CCC;
+	background-attachment:scroll;
+	/* [disabled]background-image: url(Wallpaper.jpg); */
+	background-position: left center;
+	background-repeat: no-repeat;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-color: #FFF;
+	padding:5px;
+	}

@@ -1,0 +1,95 @@
+@charset "utf-8";
+/*CSS*/
+body,html {  	
+	background-image:url("imagem1.jpg");
+    background-attachment:fixed;
+    background-repeat:repeat;
+    background-position:center;
+    background-size:100%;
+	margin: 0;  	/*Tamanho da margem para todos os lados*/
+	padding: 0;  /*altera espaçamento*/
+	height: 100%;  /*altura*/
+	/*background: #ddd;  /*altera cor*/
+}   
+
+#global {
+    width: 90%;/*largura*/
+	min-width: calc(240px + 400px);/*Largura minima*/
+	height: 100%;/*altura*/
+    margin: 0 auto;/*Define de uma so vez o Tamanho da margem para todos os lados*/
+}	 
+	 
+#cabecalho {
+	border:20px solid #000;
+	width:900px;
+	height:	100px;/*altura*/
+	overflow: hidden;/*Comportamento do browser quando o conteúdo do elemento for maior que sua área*/ /*hidden => O conteúdo será cortado (se maior que a área disponível) e não haverá barra de rolagens no elemento*/
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	background-color: #FFF;
+}
+
+#entrar {
+	float: inherit;/*Posicionamento adjacente à esquerda ou à direita do elemento*/
+	border:5px solid #ffffff;
+	width:300px;
+	width: 240px; /*largura*/
+	height: calc(100% - 150px);/*altura*/
+	min-height: 400px;/*Altura mínima*/
+	overflow: auto;/*Comportamento do browser quando o conteúdo do elemento for maior que sua área*//*auto => O método será atribuído pelo browser cliente*/
+    background: #FFFFFF; /*Define de uma só vez todas as propriedades de imagem de fundo*/
+}
+
+
+#conteudo {
+	
+
+
+
+
+
+
+
+
+	float: ;/*Posicionamento adjacente à esquerda ou à direita do elemento*/
+	width: 900px;/*largura*/
+	min-width: 400px;/*Largura mínima*/
+	height: calc(100% - 150px);/*altura*/
+	min-height: 800px;
+    
+
+
+
+
+
+
+
+*//*Define de uma só vez todas as propriedades de imagem de fundo*/
+	overflow-y: ;/*y => Corte as bordas superior / inferior do conteúdo dentro do elemento div - se é que transborda do elemento área de conteúdo*//*Comportamento do browser quando o conteúdo do elemento for maior que sua área*//*scroll => O conteúdo será cortado (se maior que a área disponível) mas haverá barra de rolagens no elemento. Quando a mídia for especificada como 'print', o conteúdo do elemento poderá ser impresso. */
+	background-color: #FFF;
+	border-top-width: 20px;
+	border-right-width: 20px;
+	border-bottom-width: 20px;
+	border-left-width: 20px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	padding:5px;
+}
+
+#rodape {
+	clear: both;/*Controle para os posicionamentos float*//*both => o elemento será posicionado abaixo da borda inferior de qualquer elemento flutuante, seja à direita ou à esquerda*/
+	border:20px solid #000;
+	width:900px;
+	margin: 0 auto;/*Define de uma só vez todas as propriedades de imagem de fundo*/
+	height: 70px;/*Altura*/
+	overflow: hidden;
+	background-color: #FFF;
+}
