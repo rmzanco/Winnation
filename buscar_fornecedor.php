@@ -31,14 +31,14 @@ $var=$_POST['cx_busca_forn'];
 $consul="SELECT * FROM fornecedor WHERE razao_social like '%".$var."%' ";
 $resul=mysql_query($consul,$link);
 while ($busca=mysql_fetch_array($resul)){
-	echo "<tr><td>".$busca['cod_forn']."</td>";
-	echo "<td>".$busca['razao_social']."</td>";
-	echo "<td>".$busca['logradouro']."</td>";
-	echo "<td>".$busca['UF']."</td>";
-	echo "<td>".$busca['CEP']."</td>";
-	echo "<td>".$busca['cnpj_forn']."</td>";
-	echo "<td>".$busca['telefone']."</td>";
-	echo "<td>".$busca['email']."</td>";
+	echo "<tr><td>".$busca['cod_forn']    ."</td>";
+	echo "<td>"    .$busca['razao_social']."</td>";
+	echo "<td>"    .$busca['logradouro']  ."</td>";
+	echo "<td>"    .$busca['UF']          ."</td>";
+	echo "<td>"    .$busca['CEP']         ."</td>";
+	echo "<td>"	   .$busca['cnpj_forn']   ."</td>";
+	echo "<td>"    .$busca['telefone']    ."</td>";
+	echo "<td>"    .$busca['email']       ."</td>";
 	echo "</tr>";
 }
 ?>
