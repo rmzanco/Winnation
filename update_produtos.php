@@ -12,8 +12,8 @@ $estoque=$_POST["quantidade_estoque"];
 $tipo_prod=$_POST["tipo_prod"];
 $descricao=$_POST["descricao"];
 
-$cmdSQL="UPDATE produtos SET cod_forn='$cod_forn', nome='$nome', quantidade_estoque='$estoque', tipo_prod='$tipo_prod', descricao='$descricao' where cod_prod='$cod'";
-$result=mysql_query($cmdSQL,$link);
-echo "<script>window.location.href='listar_usuarios.php'</script>";
+$SQL="UPDATE produtos SET cod_forn='$cod_forn', nome='$nome', quantidade_estoque='$estoque', tipo_prod='$tipo_prod', descricao='$descricao' where cod_prod='$cod'";
+$result=mysqli_query($link,$SQL);
+echo "<script>window.location.href='listar.php'</script>";
 
 ?>

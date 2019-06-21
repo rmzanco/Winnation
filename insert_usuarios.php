@@ -15,12 +15,12 @@ $nome=$_POST["nome"];
 $senha=$_POST["senha"];
 
 $SQL="INSERT INTO usuario (nome,senha) VALUES ('$nome','$senha')"; //insere os usuarios através de comando sql
-$resul= mysql_query($SQL,$link); //coleta os resultados e  Envia uma consulta MySQL
+$resul= mysqli_query($link,$SQL); //coleta os resultados e  Envia uma consulta MySQL
 echo $resul;
 
 setcookie("cx_nome",$nome);
 
-echo "<script>window.location.href='listar_usuarios.php'</script>";
+echo "<script>window.location.href='listar.php'</script>";
 
 ?>
 </body>

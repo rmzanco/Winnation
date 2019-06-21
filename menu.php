@@ -3,7 +3,7 @@
 	<ul>
             <li><a href="principal.php"><span>Pagina Inicial</span></a></li>
             <!--chama página para edição do usuário corrente com GET editar=1!-->
-            <li><a href="listar_usuarios.php"><span>Listar Usuários</span></a></li>
+            <li><a href="listar.php"><span>Listar Usuários</span></a></li>
             <li><a href="listar_alunos.php"><span>Listar Alunos</span></a></li>
             <li><a href="listar_professores.php"><span>Listar Professores</span></a></li>
             <li><a href="listar_turmas.php"><span>Listar Turmas</span></a></li>

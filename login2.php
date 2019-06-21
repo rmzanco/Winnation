@@ -8,7 +8,7 @@
 <body>
 <?PHP
 
-include "Projeto2015/conexao.php";
+include "conexao.php";
 
 $link=conectar();
 
@@ -17,18 +17,18 @@ $senha=$_POST["senha"];
 
 $sql = "SELECT * FROM usuario WHERE nome='$nome' AND senha='$senha'"; 
 
-$result = mysql_query($sql, $link);
-if(mysql_num_rows($result)<=0)
+$result = mysqli_query($link, $sql);
+if(mysqli_num_rows($result)<=0)
 {
 	echo"<script> alert ('Usuário $nome não existe e/ou a senha está incorreta!');</script>";
 	echo"<script>window.history.back()</script>";
 	exit;
 }else{
 	setcookie("cx_nome",$nome);
-	$linhas=mysql_fetch_array($result);
+	$linhas=mysqli_fetch_array($result);
 	$_SESSION["codigo"]=$linhas[0];
 	echo"<script> alert ('Bem Vindo $nome!');</script>";
-	header("location:listar_usuarios.php"); //se for usuario(adm) cai em uma pagina, se for usuario2(comum) cai em outra.
+	header("location:listar.php"); //se for usuario(adm) cai em uma pagina, se for usuario2(comum) cai em outra.
 }
 
 

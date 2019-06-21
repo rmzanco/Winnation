@@ -14,8 +14,8 @@ $cnpj_forn=$_POST["cnpj_forn"];
 $tel=$_POST["telefone"];
 $email=$_POST["email"];
 
-$cmdSQL="UPDATE fornecedor SET  razao_social='$razao_social', logradouro='$log', UF='$UF', CEP='$cep',cnpj_forn='$cnpj_forn',telefone='$tel',email='$email' where cod_forn='$cod_forn'";
-$result=mysql_query($cmdSQL,$link);
-echo "<script>window.location.href='listar_usuarios.php'</script>";
+$SQL="UPDATE fornecedor SET  razao_social='$razao_social', logradouro='$log', UF='$UF', CEP='$cep',cnpj_forn='$cnpj_forn',telefone='$tel',email='$email' where cod_forn='$cod_forn'";
+$result=mysqli_query($link,$SQL);
+echo "<script>window.location.href='listar.php'</script>";
 
 ?>

@@ -18,9 +18,9 @@ $cpf=$_POST["cpf_cliente"];
 $cnpj_loja=$_POST["cnpj_loja"];
 
 $SQL="INSERT INTO vendas(cod_prod,quantidade,data,cpf_cliente,cnpj_loja) VALUES ('$cod_prod','$qtd' ,'$data','$cpf','$cnpj_loja')"; //insere os usuarios através de comando sql
-$resul= mysql_query($SQL,$link); //coleta os resultados e  Envia uma consulta MySQL
+$resul= mysqli_query($link,$SQL); //coleta os resultados e  Envia uma consulta MySQL
 echo $resul;
-echo "<script>window.location.href='listar_usuarios.php'</script>";
+echo "<script>window.location.href='listar.php'</script>";
 
 ?>
 </body>

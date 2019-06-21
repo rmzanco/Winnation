@@ -13,8 +13,8 @@ if(isset($_GET['cod_venda'])) //isset avisa se está vazio ou nao
 include "conexao.php";
 $link = conectar();
 $SQL= "SELECT * from vendas WHERE cod_venda='$valor'"; 
-$busca = mysql_query($SQL) or die (mysql_error());
-$campo = mysql_fetch_array($busca);
+$busca = mysqli_query($link,$SQL) or die (mysql_error());
+$campo = mysqli_fetch_array($busca);
 }else{
 	$campo['cod_venda']="";
 	$campo['cod_prod']="";

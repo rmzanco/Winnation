@@ -13,8 +13,8 @@ if(isset($_GET['cod_forn'])) //isset avisa se está vazio ou nao
 include "conexao.php";
 $link = conectar();
 $SQL= "SELECT * from fornecedor WHERE cod_forn='$valor'"; // cod-aluno chave primaria do b.d.
-$busca = mysql_query($SQL) or die (mysql_error());
-$campo = mysql_fetch_array($busca);
+$busca = mysqli_query($link,$SQL) or die (mysql_error());
+$campo = mysqli_fetch_array($busca);
 }else{
 	$campo['cod_forn']="";
 	$campo['razao_social']="";

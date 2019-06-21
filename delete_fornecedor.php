@@ -7,8 +7,8 @@
 	$cod=$_GET["cod_forn"];
 	
 	$SQL="DELETE FROM fornecedor WHERE cod_forn=$cod";
-	$resul=mysql_query($SQL,$link);
+	$resul=mysqli_query($link,$SQL);
 	
 	echo "<script>alert('Fornecedor excluido c/ sucesso!');</script>";
-	echo "<script>window.location.href='listar_usuarios.php'</script>";
+	echo "<script>window.location.href='listar.php'</script>";
 ?>

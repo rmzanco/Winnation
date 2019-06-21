@@ -66,7 +66,7 @@ body,html {
 
 
 
-*//*Define de uma só vez todas as propriedades de imagem de fundo*/
+/*Define de uma só vez todas as propriedades de imagem de fundo*/
 	overflow-y: ;/*y => Corte as bordas superior / inferior do conteúdo dentro do elemento div - se é que transborda do elemento área de conteúdo*//*Comportamento do browser quando o conteúdo do elemento for maior que sua área*//*scroll => O conteúdo será cortado (se maior que a área disponível) mas haverá barra de rolagens no elemento. Quando a mídia for especificada como 'print', o conteúdo do elemento poderá ser impresso. */
 	background-color: #FFF;
 	border-top-width: 20px;

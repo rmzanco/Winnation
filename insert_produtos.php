@@ -18,9 +18,9 @@ $tipo=$_POST["tipo_prod"];
 $desc=$_POST["desc"];
 
 $SQL="INSERT INTO produtos (nome,cod_forn,quantidade_estoque,tipo_prod,descricao) VALUES ('$nome','$cod_forn','$estoque','$tipo','$desc')"; //insere os usuarios através de comando sql
-$resul= mysql_query($SQL,$link); //coleta os resultados e  Envia uma consulta MySQL
+$resul= mysqli_query($link,$SQL); //coleta os resultados e  Envia uma consulta MySQL
 echo $resul;
-echo "<script>window.location.href='listar_usuarios.php'</script>";
+echo "<script>window.location.href='listar.php'</script>";
 
 ?>
 </body>

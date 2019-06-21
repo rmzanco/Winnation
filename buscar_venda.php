@@ -27,9 +27,9 @@ echo "<center><font face=\"Segoe UI\" size=\"4\">Pesquisa de Vendas</font></cent
 include ("conexao.php");
 $link=conectar();
 $var=$_POST['cx_busca_venda'];
-$consul="SELECT * FROM vendas WHERE cod_venda like '%".$var."%' ";
-$resul=mysql_query($consul,$link);
-while ($busca=mysql_fetch_array($resul)){
+$SQL="SELECT * FROM vendas WHERE cod_venda like '%".$var."%' ";
+$resul=mysql_query($link,$SQL);
+while ($busca=mysqli_fetch_array($resul)){
 	echo "<tr><td>".$busca['cod_venda']."</td>";
 	echo "<td>".$busca['cod_prod']."</td>";
 	echo "<td>".$busca['quantidade']."</td>";
@@ -41,7 +41,7 @@ while ($busca=mysql_fetch_array($resul)){
 ?>
 </table>
 
-<a href="listar_usuarios.php">
+<a href="listar.php">
 <button name="voltar" value="button_sair" type="submit" style="width:84px; height: 30px; background-color: #C30" tabindex="10">Retornar</button>
 </a></center>
    

@@ -20,9 +20,9 @@ $telefone=$_POST["telefone"];
 $email=$_POST["email"];
 
 $SQL="INSERT INTO fornecedor(razao_social,logradouro,UF,CEP,cnpj_forn,telefone,email) VALUES ('$razao_social','$logradouro' ,'$UF','$CEP','$cnpj_forn','$telefone','$email')"; //insere os usuarios através de comando sql
-$resul= mysql_query($SQL,$link); //coleta os resultados e  Envia uma consulta MySQL
+$resul= mysqli_query($link,$SQL); //coleta os resultados e  Envia uma consulta MySQL
 echo $resul;
-echo "<script>window.location.href='listar_usuarios.php'</script>";
+echo "<script>window.location.href='listar.php'</script>";
 
 ?>
 </body>
