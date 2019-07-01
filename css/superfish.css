@@ -2,16 +2,15 @@
 .menu_block  {
 	z-index: 999;
 	position: relative;
-	padding-top: 25px;
+	padding-top: 12px;
 	border-top: 1px solid #d9d9d9;
 	border-bottom: 1px solid #d9d9d9;
-	padding-bottom: 15px;
+	padding-bottom: 12px;
 }
 
 
 .page1 .menu_block {
 	border-top: 0;
-	padding-top: 37px;
 }
 
 .menu_block nav {
@@ -22,23 +21,30 @@
 
 nav>.sf-menu {
 	z-index: 990;
-	text-align: center;
+	text-align:right;
 	position: relative;
 }
 nav{ position:relative;padding: 0px 0 0 0;}
 .sf-menu ul {position:absolute;top:-999px; display:none;/* left offset of submenus need to match (see below) */}
-.sf-menu li {float:left;position:relative; }
+
+.logo-ul{
+	float: left;
+}
+
+
+.sf-menu li {float:right;position:relative; }
 .sf-menu>li {
 	top: 1px;
 	display: inline-block;
 	position: relative;
 	float: none;
 	font-size: 24px;
-	line-height: 30px;
+	line-height: 70px;
 	-moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -o-box-sizing: border-box;
-    box-sizing: border-box;
+	box-sizing: border-box;
+	
 }
 
 
