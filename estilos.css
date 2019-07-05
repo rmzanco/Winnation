@@ -9,8 +9,42 @@ body,html {
 	margin: 0;  	/*Tamanho da margem para todos os lados*/
 	padding: 0;  /*altera espaçamento*/
 	height: 100%;  /*altura*/
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	text-align: center;
 	/*background: #ddd;  /*altera cor*/
 }   
+
+table {
+	width: 100%;
+					background-image: url(cesto-basquetebol.jpg);
+					color:#FFFFFF;
+					font:12px/15px 'Open Sans MS', sans-serif;
+					border-color:#F30;
+					text-align=center;
+}
+  
+th {
+	height: 80px;
+}
+
+th, td {
+	padding: 15px;
+}
+
+tr:hover {
+	background-color: #5e5957;
+}
+
+.intro{
+	font-size: 30px;
+}
+
+.logout{
+	background-color:#666666;
+	color:#ffffff;
+}
+
 
 #global {
     width: 90%;/*largura*/
@@ -44,30 +78,16 @@ body,html {
 
 
 #conteudo {
-	
 
-
-
-
-
-
-
-
-	float: ;/*Posicionamento adjacente à esquerda ou à direita do elemento*/
+	float: inherit;/*Posicionamento adjacente à esquerda ou à direita do elemento*/
 	width: 900px;/*largura*/
 	min-width: 400px;/*Largura mínima*/
 	height: calc(100% - 150px);/*altura*/
 	min-height: 800px;
     
 
-
-
-
-
-
-
 /*Define de uma só vez todas as propriedades de imagem de fundo*/
-	overflow-y: ;/*y => Corte as bordas superior / inferior do conteúdo dentro do elemento div - se é que transborda do elemento área de conteúdo*//*Comportamento do browser quando o conteúdo do elemento for maior que sua área*//*scroll => O conteúdo será cortado (se maior que a área disponível) mas haverá barra de rolagens no elemento. Quando a mídia for especificada como 'print', o conteúdo do elemento poderá ser impresso. */
+	/*overflow-y: ;y => Corte as bordas superior / inferior do conteúdo dentro do elemento div - se é que transborda do elemento área de conteúdo*//*Comportamento do browser quando o conteúdo do elemento for maior que sua área*//*scroll => O conteúdo será cortado (se maior que a área disponível) mas haverá barra de rolagens no elemento. Quando a mídia for especificada como 'print', o conteúdo do elemento poderá ser impresso. */
 	background-color: #FFF;
 	border-top-width: 20px;
 	border-right-width: 20px;
