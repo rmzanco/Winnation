@@ -395,13 +395,26 @@ header h1 a img {
 .shoe{
 	margin-left: 15px;
 	margin-right: 15px;
-    background-color: rgb(30, 14, 90);
+    background-color: rgb(11, 0, 48);
     padding: 15px;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .shoe img{
     padding: 2px;
     width: 550px;
+}
+
+.shoe:hover{
+    background-color: rgba(233, 87, 3, 0.911);
+    transition-duration: 300ms;
+    color:#000000;
+}
+
+.shoe_right{
+    text-align: right;
+    transition: text-align 0.5s ease-in;
 }
 
 /*Blocks*/
