@@ -1,6 +1,6 @@
 ﻿<?php
 	include "conexao.php";
-	
+	/* asdasdasdasd */
 	
 	$link=conectar();
 	
