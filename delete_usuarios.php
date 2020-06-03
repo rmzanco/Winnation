@@ -1,7 +1,6 @@
 ﻿<?php
 	include "conexao.php";
-	/* asdfdsfsdfdsfdsfasdasdasd */
-	sdsafdasdafaf
+	
 	$link=conectar();
 	
 	$cod=$_GET["cod_usuario"];
